@@ -7,7 +7,7 @@ from pyxley import UILayout, register_layouts
 
 import json
 
-def get_data(filename="./project/static/data.json"):
+def get_data(filename="./static/data.json"):
     df = pd.DataFrame(json.load(open(filename, "r")))
     df = df.dropna()
 

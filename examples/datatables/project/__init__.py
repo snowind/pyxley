@@ -31,7 +31,7 @@ app = create_app(here, path_to_static, here+"/templates",
     index_params=html_params)
 
 # build the layout
-get_layouts(app, "./project/static/data.json")
+get_layouts(app, "./static/data.json")
 
 if __name__ == "__main__":
     app.run(debug=True)
